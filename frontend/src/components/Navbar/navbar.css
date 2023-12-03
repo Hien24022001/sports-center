@@ -1,0 +1,66 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.navbar .logo {
+    display: none;
+}
+
+.navbar .toggle-btn {
+    font-size: 25px;
+    color: #3b82f6;
+    cursor: pointer;
+}
+
+.navbar .logo-text {
+    text-transform: capitalize;
+    font-size: 30px;
+    font-family: var(--headingFont);
+    font-weight: lighter;
+}
+
+.navbar .btn-container {
+    position: relative;
+}
+
+.navbar .user-btn {
+    padding: 6px 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.navbar .logout {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background-color: #dbeafe;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.navbar .logout button {
+    color: #3b82f6;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.navbar .show-logout {
+    display: block;
+}

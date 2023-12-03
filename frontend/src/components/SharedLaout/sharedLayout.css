@@ -1,0 +1,11 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    /* height: 20000px; */
+}
+
+.dashboard-page {
+    padding: 30px 20px;
+    border: 1px solid rgb(221, 221, 221);
+    height: 100%;
+}
