@@ -5,6 +5,11 @@ let config = {
     password: 'mysql_HIT2k1',
     database: 'sports-center'
 };
-let connection = mysql.createConnection(config);
-module.exports = { connection }
 
+let connection = mysql.createConnection(config);
+
+exports.getMaintainList = async function() {
+    return await connection.awaitQuery(
+        `call prc_Loc_Cac_Dich_Vu_Theo_Diem_Trung_Binh(${point}, "${type}")`
+    );
+}

@@ -1,5 +1,5 @@
 import { FaBook, FaUser } from 'react-icons/fa';
-import { IoBarChartSharp } from 'react-icons/io5';
+import { IoBarChartSharp, IoSettings } from 'react-icons/io5';
 
 export const sidebarLinks = [
     {
@@ -9,9 +9,15 @@ export const sidebarLinks = [
         url: '/user-management'
     },
     {
-        id: 1,
-        title: 'Quản lý khóa học',
+        id: 2,
+        title: 'Quản lý dịch vụ',
         icon: <FaBook />,
         url: '/course-management'
+    },
+    {
+        id: 3,
+        title: 'Chi phí bảo dưỡng',
+        icon: <IoSettings />,
+        url: '/maintainance'
     },
 ]

@@ -1,0 +1,48 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+    z-index: 1;
+}
+
+.modal .container {
+    background-color: #fff;
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    animation: fadeIn ease 0.5s;
+    margin-top: 10px;
+    padding: 12px 24px;
+    border-radius: 5px;
+}
+.modal .container .header {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 0;
+    border-bottom: 1px solid #d1d1d1;
+}
+.modal .container .body {
+    padding: 18px 0;
+    font-size: 16px;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+.modal .container .footer {
+    text-align: right;
+}
+.modal .container .footer button {
+    margin: 0;
+    box-shadow: none;
+    border-radius: 8px;
+}
+
+label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: normal;
+}
+              
